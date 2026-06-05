@@ -28,7 +28,7 @@ uint64_t nPrime(uint64_t n) {
 
 uint64_t nextPrime(uint64_t value) {
   uint64_t num = value + 1;
-  while (not checkPrime(num)) {
+  while (!checkPrime(num)) {
 	  ++num;
   }
   return num;
@@ -41,7 +41,7 @@ uint64_t sumPrime(uint64_t hbound) {
 		  sum += i;
 	  }
   }
-  return sum;
+	return sum;
 }
 
 uint64_t twinPrimes(uint64_t lbound, uint64_t hbound) {
